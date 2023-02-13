@@ -1,0 +1,12 @@
+server:
+  port: 9501
+
+---
+
+spring:
+  profiles: dev
+  application:
+    name: web-server
+    version: v1.0
+
+---
