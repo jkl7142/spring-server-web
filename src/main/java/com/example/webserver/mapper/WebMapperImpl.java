@@ -12,7 +12,7 @@ public class WebMapperImpl implements WebMapper {
     SqlSession sqlSession;
 
     @Override
-    public User userSelect(String uid) {
-        return sqlSession.selectOne("userSelect", uid);
+    public User selectUser(String uid) {
+        return sqlSession.selectOne("selectUserById", uid);
     }
 }

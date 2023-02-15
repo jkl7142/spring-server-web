@@ -3,8 +3,8 @@
 <mapper namespace="com.example.webserver.mapper.WebMapper">
     <resultMap id="map" type="java.util.HashMap"/>
 
-    <select id="userSelect" resultType="com.example.webserver.model.User">
-        { CALL [dbo].[users] ( #{uid} ) }
+    <select id="selectUserById" parameterType="string" resultType="com.example.webserver.model.User">
+        select * from users where uid = #{uid}
     </select>
 
 </mapper>

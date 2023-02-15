@@ -13,6 +13,6 @@ public class InformationService {
     WebMapperImpl webMapper;
 
     public User selectOne(String uid) {
-        return webMapper.userSelect(uid);
+        return webMapper.selectUser(uid);
     }
 }
